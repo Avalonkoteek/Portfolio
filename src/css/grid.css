@@ -1,0 +1,31 @@
+.grid{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    z-index:0;
+    top:0;
+}
+.grid__line{
+    position: relative;
+    height: 100%;
+    width: 1px;
+    background-color: #181818;
+    overflow: hidden;
+}
+/* lightLine */
+
+.lightLine{
+    background-color: #fff;
+    height: 50px;
+    width: 1px;
+    position: absolute;
+   transform: translateY(-100%);
+   transition: all 0.5s ease;
+}
+.lightLine--active{
+    transform: translateY(100%);
+    height: 200px;
+}
