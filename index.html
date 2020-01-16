@@ -6,19 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
 
-    <link rel="stylesheet" href="/src/css/style.css" />
+    <link rel="stylesheet" href="src/css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.css"
     />
-    <link rel="stylesheet" href="/src/css/after-portfolio.css" />
+    <link rel="stylesheet" href="src/css/after-portfolio.css" />
   </head>
 
   <body class="transform---">
     <!-- NAVIGATION 
     ===============================================-->
 
-    <nav>
+    <nav class="js-nav">
       <div class="navbar">
         <!-- menu btn -->
         <div class="menu-btn js-burger">
@@ -28,7 +28,9 @@
         </div>
         <!-- /end menu btn -->
       </div>
-      <div class="nav-links">
+      <div class="nav-links js-nav-links">
+        <!-- bg -->
+        <div class="header__rect"></div>
         <span class="bg-title">MENU</span>
         <div class="grid">
           <div class="grid__line"></div>
@@ -37,11 +39,12 @@
           <div class="grid__line"></div>
           <div class="grid__line"></div>
         </div>
+        <!-- /bg -->
         <ul>
-          <li class="nav-link"><a href="">Главная</a></li>
-          <li class="nav-link"><a href="">Обо мне</a></li>
-          <li class="nav-link"><a href="">Портфолио</a></li>
-          <li class="nav-link"><a href="">Портфолио</a></li>
+          <li class="nav-link"><a href="home">Главная</a></li>
+          <li class="nav-link"><a href="about">Обо мне</a></li>
+          <li class="nav-link"><a href="portfolio">Портфолио</a></li>
+          <li class="nav-link"><a href="contact">Портфолио</a></li>
           <li class="nav-link"><a href="">Контакты</a></li>
         </ul>
         <div class="social-links social-links__menu">
@@ -72,7 +75,7 @@
     <!-- HOME PAGE 
     ===============================================-->
 
-    <header>
+    <header id="home">
       <div class="background-wrapper js-mousemove3d__wrapper">
         <!-- background -->
         <div class="grid">
@@ -133,7 +136,7 @@
 
     <!-- ABOUT SECTION
     =============================================== -->
-    <section class="about">
+    <section class="about" id="about">
       <!-- background  -->
       <div class="grid">
         <div class="grid__line"></div>
@@ -146,29 +149,28 @@
       <p class="background-text background-text__about">profile</p>
 
       <!-- about inner -->
-      <div class="about__inner">
+      <div class="about__wrapper">
         <!-- inner -->
         <h2 class="section-title">Кто я</h2>
 
         <!--  -->
         <div class="about-photo">
           <div class="about-photo__left-name">
-            <p>Илья Лоскутов - крутой чел!</p>
+            <p>Я не мусульманин!!!</p>
           </div>
           <div class="about-photo__content">
             <img src="src/img/VYcyYdkxI7A.jpg" alt="" />
-            <p>Илюша - продюсер</p>
+            <p>Дмитрий Быков</p>
           </div>
         </div>
         <div class="about-text">
-          <p class="about-text__title">Я ЛОскутов!</p>
+          <p class="about-text__title">Кто я такой?</p>
           <p class="about-text__description">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially
+            Я начинающий frontend разработчик из Санкт-петербурга. мечтаю стать
+            проффесиональным разработчиком сайтов и приложений, сочитающих в
+            себе функциональность и эстетичную визуальную составляющию. Не пью,
+            иповедаю пастофарианство, ненавижу стили, когда алиса за нас будет
+            все делать????
           </p>
         </div>
         <!--  -->
@@ -226,7 +228,7 @@
     <!-- PORTFOLIO 
       =============================================-->
 
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
       <!-- background -->
       <div class="background-wrapper">
         <!-- background -->
