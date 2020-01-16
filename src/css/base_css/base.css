@@ -4,25 +4,26 @@
   margin: 0;
 }
 html {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Playfair Display", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
 }
 :root {
-  --padding: 80px;
+  --padding: 60px;
+  --padding-second: 120px;
 }
 
 a {
   text-decoration: none;
   background-color: none;
-  color:#fff;
+  color: #fff;
 }
 
 h1,
 h2,
 h3 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Playfair Display", sans-serif;
   font-style: normal;
   font-weight: 700;
 }
@@ -89,4 +90,21 @@ input::placeholder,
 textarea::placeholder {
   color: #dadada;
   font-size: 14px;
+}
+
+.section-title {
+  width: 100%;
+  position: relative;
+
+  color: #3b3b3b;
+  font-weight: 400;
+}
+.section-title::before {
+  content: "";
+  position: absolute;
+  top: calc(50% - 1px);
+  left: -60px;
+  width: 40px;
+  height: 2px;
+  background-color: #3b3b3b;
 }

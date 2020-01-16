@@ -1,83 +1,147 @@
-
-header{
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    background-color: #111;
+:root {
+  --border-frame: 75px;
 }
-.container{
-    width: 100%;
-    height: 100%;
-    padding:0 var(--padding);
-    position: relative;
-    z-index: 1;
+@media (max-width: 1400px) {
+  :root {
+    --border-frame: 55px;
+  }
 }
-.header__rect{
-    position: absolute;
-    width: 100%;
-    border:20px solid #151515;
-    height: 60%;
-    z-index: 0;
-    box-shadow: 0px 0 20px rgba(0,0,0,.45),
-    0px 0 20px rgba(0,0,0,.45) inset;
-    top:0;
-    bottom: 0;
-    left:0;
-    right:0;
-    margin:auto;
+@media (max-width: 1000px) {
+  :root {
+    --border-frame: 35px;
+  }
 }
-.header__underTitle{
-    width: 100%;
-    text-align: center;
-    z-index: 1;
-    position: absolute;
-    top:50%;
-    transform: translateY(-50%);
-    letter-spacing: 30px;
-    font-size: 148px;
-    color:#151515;
-    opacity: 1;
-    font-weight: 900;
-    letter-spacing: .1em;
-    text-shadow: 0px 0 20px rgba(0,0,0,.08);
-}
-@media(max-width:800px){
-    .header__rect{
-        display: none;
-    }
+body {
+  background-color: #111;
 }
 
-
-.header__inner{
-height: 100%;
-    width: 100%;
-display: flex;
-flex-direction: column;
-justify-content: flex-end;
-position: relative;
-z-index: 10;
-padding-bottom: 50px;
-color:#fff;
-    
+/* HOME PAGE */
+.background-wrapper {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 0;
 }
-.header__title{
-  margin-left: 80px;
-    font-size: 60px;
-}
-.header__subtitle{
-    margin-left: 80px;
-    font-weight: 300;
-    font-size: 40px; 
-
-}
-.header__bottomInfo{
-    margin-top:80px;
-    width: 100%;
-    display: flex;
-
-    justify-content: space-between;
-}
-.header__city{
-    text-transform: uppercase;
+header {
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  position: relative;
+  padding: 0 var(--padding);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
+/*  BG  */
+.header__rect {
+  position: absolute;
+  width: 80%;
+  border: var(--border-frame) solid #151515;
+  height: 60%;
+  z-index: 0;
+  box-shadow: 0 0 75px #000, inset 0 0 75px #000;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.header__rect::after {
+  position: absolute;
+  height: 100%;
+  content: "";
+  width: 100%;
+  z-index: 3;
+  border-right: var(--border-frame) solid #151515;
+}
+.header__underTitle {
+  z-index: 1;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  /* letter-spacing: 30px;
+  font-size: 148px;
+  color: #151515; */
+  opacity: 1;
+
+  letter-spacing: 0.1em;
+  text-shadow: 0px 0 20px rgba(0, 0, 0, 0.2);
+
+  font-family: "assc";
+  font-size: 300px;
+  text-align: center;
+  color: transparent;
+  -webkit-text-stroke: 4px #151515;
+  text-transform: uppercase;
+}
+
+/* Content */
+
+.header__inner {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+  align-items: center;
+  padding-bottom: 50px;
+  color: #fff;
+}
+.header-main-info-box {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+.header__title {
+  width: 100%;
+  text-align: center;
+  font-size: 60px;
+}
+
+/* cv button */
+.button__header {
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 60px;
+}
+
+/* header-bottom */
+.social-links__header {
+}
+.header-bottom-elements {
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 50px;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.header-bottom-element--center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+.header-bottom-element--center::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  height: 50px;
+  width: 1px;
+  background: #fff;
+  transform: translateY(120%);
+  transition: all 0.4s ease;
+}
+.header-bottom-element--center:hover::after {
+  transform: translateY(150%);
+}
+.header__city {
+  text-transform: uppercase;
+}

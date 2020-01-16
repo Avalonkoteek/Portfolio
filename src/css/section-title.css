@@ -1,0 +1,19 @@
+.section-title {
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 16px;
+  text-align: left;
+  margin-bottom: 70px;
+  color: #3b3b3b;
+  font-weight: 400;
+  position: relative;
+}
+.section-title::before {
+  content: "";
+  position: absolute;
+  top: calc(50% - 1px);
+  left: -60px;
+  width: 40px;
+  height: 1px;
+  background-color: #3b3b3b;
+}

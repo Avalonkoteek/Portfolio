@@ -1,149 +1,393 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
-    <link rel="stylesheet" href="./src/css/style.css">
-</head>
 
-<body>
-    <header>
-        <nav>
-            <div class="navbar">
-                <div class="navbar__logo">
-                    <p>Главная</p>
-                </div>
-                <div class="navbar-controls">
-                    <a class="navbar__cv">СМОТРЕТЬ РЕЗЮМЕ</a>
-                    <a class="navbar__leng">RU</a>
-                    <button class="navbar__burger"></button>
-                </div>
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.css"
+    />
+    <link rel="stylesheet" href="/src/css/after-portfolio.css" />
+  </head>
 
-            </div>
-            <div class="nav-links">
-                <span class="bg-title">MENU</span>
-                <div class="grid">
-                    <div class="grid__line"></div>
-                    <div class="grid__line"></div>
-                    <div class="grid__line"></div>
-                    <div class="grid__line"></div>
-                    <div class="grid__line"></div>
-                </div>
-                <ul>
-                    <li class="nav-link"><a href="">Главная</a></li>
-                    <li class="nav-link"><a href="">Обо мне</a></li>
-                    <li class="nav-link"><a href="">Портфолио</a></li>
-                    <li class="nav-link"><a href="">Портфолио</a></li>
-                    <li class="nav-link"><a href="">Контакты</a></li>
-                </ul>
-                <div class="social-links social-links--center-absolute">
-                    <div class="social-link"><img src="/src/img/social/github-logo.svg" alt=""><img
-                            src="/src/img/social/github-logo (1).svg" alt=""></div>
-                    <div class="social-link"><img src="/src/img/social/vk-social-network-logo.svg" alt=""><img
-                            src="/src/img/social/vk-social-network-logo (1).svg" alt=""></div>
-                    <div class="social-link"><img src="/src/img/social/telegram.svg" alt=""><img
-                            src="/src/img/social/telegram (1).svg" alt=""></div>
-                </div>
-            </div>
-        </nav>
-        <div class="container">
-            <div class="header__rect"></div>
-            <div class="header__underTitle">FRONTEND</div>
-            <div class="grid">
-                <div class="grid__line"></div>
-                <div class="grid__line"></div>
-                <div class="grid__line"></div>
-                <div class="grid__line"></div>
-                <div class="grid__line"></div>
-            </div>
-            <div class="header__inner">
-                <h1 class="header__title">Frontend  разработчик</h1>
-                <div class="header__subtitle">Быков Дмитрий</div>
-                <div class="header__bottomInfo">
-                    <p class="header__city">г. Санкт-Петербург</p>
-                    <p>Обо мне</p>
-                    <div class="social-links" style="position: relative;">
-                        <div class="social-link"><img src="/src/img/social/github-logo.svg" alt=""><img
-                                src="/src/img/social/github-logo (1).svg" alt=""></div>
-                        <div class="social-link"><img src="/src/img/social/vk-social-network-logo.svg" alt=""><img
-                                src="/src/img/social/vk-social-network-logo (1).svg" alt=""></div>
-                        <div class="social-link"><img src="/src/img/social/telegram.svg" alt=""><img
-                                src="/src/img/social/telegram (1).svg" alt=""></div>
-                    </div>
-                </div>
-            </div>
+  <body class="transform---">
+    <!-- NAVIGATION 
+    ===============================================-->
+
+    <nav>
+      <div class="navbar">
+        <!-- menu btn -->
+        <div class="menu-btn js-burger">
+          <span class="menu-btn__line"></span>
+          <span class="menu-btn__line"></span>
+          <span class="menu-btn__line"></span>
         </div>
-
-    </header>
-    <!--  -->
-    <section class="about">
+        <!-- /end menu btn -->
+      </div>
+      <div class="nav-links">
+        <span class="bg-title">MENU</span>
         <div class="grid">
-            <div class="grid__line"></div>
-            <div class="grid__line"></div>
-            <div class="grid__line"></div>
-            <div class="grid__line"></div>
-            <div class="grid__line"></div>
+          <div class="grid__line"></div>
+          <div class="grid__line"></div>
+          <div class="grid__line"></div>
+          <div class="grid__line"></div>
+          <div class="grid__line"></div>
         </div>
-        <div class="container">
-            <h2 class="about__title">Кто я</h2>
-            <div class="about-inner">
-                <!--  -->
-                <div class="about-photo">
-                    <div class="about-photo__left-name">
-                        <p>Илья Лоскутов - крутой чел!</p>
-                    </div>
-                    <div class="about-photo__content">
-                        <img src="/src/img/Rectangle 4.jpg" alt="">
-                        <p>Илюша - продюсер</p>
-                    </div>
-                </div>
-                <div class="about-text">
-                    <p class="about-text__title">Я ЛОскутов!</p>
-                    <p class="about-text__description">Lorem Ipsum is simply dummy text of the printing and typesetting
-                        industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                        unknown printer took a galley of type and scrambled it to make a type specimen book. It has
-                        survived not only five centuries, but also the leap into electronic typesetting, remaining
-                        essentially </p>
-                </div>
-                <!--  -->
-            </div>
-        </div>
-        <div class="container">
-            <h2 class="about__title">Навыки</h2>
-            <div class="about-inner">
-                <!--  -->
-               <p class="skill">Ключевые навыки</p>
-                <div class="skill-box">
-                    <p>Разработка</p>
-                    <ul>
-                        <li>HTML</li>
-                        <li>Css</li>
-                        <li>JS</li>
-                        <li>JQ</li>
-                        <li>React js</li>
-                    </ul>
-                </div>
-                <div class="skill-box">
-                        <p>Личностные</p>
-                        <ul>
-                            <li>HTML</li>
-                            <li>Css</li>
-                            <li>JS</li>
-                            <li>JQ</li>
-                            <li>React js</li>
-                        </ul>
-                </div>
-                <!--  -->
-            </div>
-        </div>
-    </section>
-    <!--  -->
-    <script src="/src/js/jquery-min.js"></script>
-    <script src="/src/js/grid-script.js"></script>
-    <script src="/src/js/menu-app.js"></script>
-</body>
+        <ul>
+          <li class="nav-link"><a href="">Главная</a></li>
+          <li class="nav-link"><a href="">Обо мне</a></li>
+          <li class="nav-link"><a href="">Портфолио</a></li>
+          <li class="nav-link"><a href="">Портфолио</a></li>
+          <li class="nav-link"><a href="">Контакты</a></li>
+        </ul>
+        <div class="social-links social-links__menu">
+          <div class="social-links__item">
+            <img src="/src/img/social/github-logo.svg" alt="" /><img
+              src="/src/img/social/github-logo (1).svg"
+              alt=""
+            />
+          </div>
 
+          <div class="social-links__item">
+            <img src="/src/img/social/vk-social-network-logo.svg" alt="" /><img
+              src="/src/img/social/vk-social-network-logo (1).svg"
+              alt=""
+            />
+          </div>
+
+          <div class="social-links__item">
+            <img src="/src/img/social/telegram.svg" alt="" /><img
+              src="/src/img/social/telegram (1).svg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HOME PAGE 
+    ===============================================-->
+
+    <header>
+      <div class="background-wrapper js-mousemove3d__wrapper">
+        <!-- background -->
+        <div class="grid">
+          <div class="grid__line"></div>
+          <div class="grid__line"></div>
+          <div class="grid__line"></div>
+          <div class="grid__line"></div>
+          <div class="grid__line"></div>
+        </div>
+
+        <div class="header__rect js-mousemove3d"></div>
+        <div class="header__underTitle js-mousemove3d__text">FRONTEND</div>
+        <!-- /background -->
+      </div>
+
+      <div class="header__inner">
+        <!-- content header -->
+        <div class="header-main-info-box">
+          <!-- Привет! Меня зовут Дима -->
+          <!-- Я Frontend разработчик -->
+          <h1 class="header__title js-header__title">Frontend  разработчик</h1>
+          <button class="button button__header">Смотреть резюме</button>
+        </div>
+
+        <div class="header-bottom-elements">
+          <p class="header-bottom-element">г. Санкт-Петербург</p>
+          <p class="header-bottom-element header-bottom-element--center">
+            Обо мне
+          </p>
+          <div class="social-links social-links__header">
+            <div class="social-links__item">
+              <img src="/src/img/social/github-logo.svg" alt="" /><img
+                src="/src/img/social/github-logo (1).svg"
+                alt=""
+              />
+            </div>
+
+            <div class="social-links__item">
+              <img
+                src="/src/img/social/vk-social-network-logo.svg"
+                alt=""
+              /><img
+                src="/src/img/social/vk-social-network-logo (1).svg"
+                alt=""
+              />
+            </div>
+
+            <div class="social-links__item">
+              <img src="/src/img/social/telegram.svg" alt="" /><img
+                src="/src/img/social/telegram (1).svg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ABOUT SECTION
+    =============================================== -->
+    <section class="about">
+      <!-- background  -->
+      <div class="grid">
+        <div class="grid__line"></div>
+        <div class="grid__line"></div>
+        <div class="grid__line"></div>
+        <div class="grid__line"></div>
+        <div class="grid__line"></div>
+      </div>
+
+      <p class="background-text background-text__about">profile</p>
+
+      <!-- about inner -->
+      <div class="about__inner">
+        <!-- inner -->
+        <h2 class="section-title">Кто я</h2>
+
+        <!--  -->
+        <div class="about-photo">
+          <div class="about-photo__left-name">
+            <p>Илья Лоскутов - крутой чел!</p>
+          </div>
+          <div class="about-photo__content">
+            <img src="src/img/VYcyYdkxI7A.jpg" alt="" />
+            <p>Илюша - продюсер</p>
+          </div>
+        </div>
+        <div class="about-text">
+          <p class="about-text__title">Я ЛОскутов!</p>
+          <p class="about-text__description">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essentially
+          </p>
+        </div>
+        <!--  -->
+      </div>
+    </section>
+
+    <!-- SKILLS 
+      =============================================-->
+
+    <section class="skills">
+      <!-- background
+      ========================= -->
+      <div class="grid">
+        <div class="grid__line"></div>
+        <div class="grid__line"></div>
+        <div class="grid__line"></div>
+        <div class="grid__line"></div>
+        <div class="grid__line"></div>
+      </div>
+      <div class="bg-rect"></div>
+      <div class="bg-rect"></div>
+      <p class="about--background-text">profile</p>
+
+      <!-- inner
+      ========================= -->
+      <div class="skills-inner">
+        <h2 class="section-title">Навыки</h2>
+        <p class="skill">Ключевые навыки</p>
+        <!--  -->
+
+        <div class="skill-box">
+          <p>Разработка</p>
+          <ul>
+            <li>HTML</li>
+            <li>Css</li>
+            <li>JS</li>
+            <li>JQ</li>
+            <li>React js</li>
+          </ul>
+        </div>
+        <div class="skill-box">
+          <p>Личностные</p>
+          <ul>
+            <li>HTML</li>
+            <li>Css</li>
+            <li>JS</li>
+            <li>JQ</li>
+            <li>React js</li>
+          </ul>
+        </div>
+        <!--  -->
+      </div>
+    </section>
+
+    <!-- PORTFOLIO 
+      =============================================-->
+
+    <section class="portfolio">
+      <!-- background -->
+      <div class="background-wrapper">
+        <!-- background -->
+        <div class="grid">
+          <div class="grid__line"></div>
+          <div class="grid__line"></div>
+          <div class="grid__line"></div>
+          <div class="grid__line"></div>
+          <div class="grid__line"></div>
+        </div>
+
+        <div class="bg-text">PORTFOLIO</div>
+      </div>
+
+      <div class="portfolio__inner">
+        <h2 class="section-title">Portfolio</h2>
+        <h3 class="portfolio__subtitle">Мои сайты, сайтетские</h3>
+        <p class="portfolio__description">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy
+        </p>
+      </div>
+      <!-- WEBSITES -->
+      <ul class="portfolio-websites">
+        <li class="portfolio-websites__item">
+          <div class="portfolio-websites__info-box">
+            <div class="portfolio-websites__title">
+              FITTIMES zelenograd
+            </div>
+            <div class="portfolio-websites__description">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi
+              rerum voluptates molestiae amet, eius tempora blanditiis.
+              Perspiciatis incidunt dolore repudiandae dolor, veritatis animi,
+              suscipit temporibus quasi officiis eius quod aliquam.Laudantium,
+              repellat!
+            </div>
+            <button class="button button__portfolio"></button>
+          </div>
+        </li>
+        <li class="portfolio-websites__item">
+          <div class="portfolio-websites__info-box">
+            <div class="portfolio-websites__title">
+              FITTIMES zelenograd
+            </div>
+            <div class="portfolio-websites__description">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi
+              rerum voluptates molestiae amet, eius tempora blanditiis.
+              Perspiciatis incidunt dolore repudiandae dolor, veritatis animi,
+              suscipit temporibus quasi officiis eius quod aliquam.Laudantium,
+              repellat!
+            </div>
+            <button class="button button__portfolio"></button>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- AFTER PORTFOLIO
+    ========================================= -->
+    <section class="after-porfolio ">
+      <h2 class="section-title">Другие работы</h2>
+      <p class="section-deskription">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+        blanditiis cumque error! Est reiciendis earum accusamus totam
+        praesentium voluptas excepturi dicta! laudantium voluptate, quis iure
+        voluptatem iusto, quasi alias eligendi dolorem voluptatum soluta!
+        Aliquam pariatur iusto, architecto inventore hic esse dolorem dolores
+        distinctio vitae placeat voluptatem, excepturi dolorum!
+      </p>
+      <!-- SLIDER
+			======================================== -->
+      <div class="wrapper">
+        <!-- BG TEXT
+					=============================== -->
+        <div class="bg-text">
+          <h1>tokyotokyo</h1>
+        </div>
+
+        <!-- SLIDER
+					=============================== -->
+        <div class="swiper-container ">
+          <div class="swiper-wrapper">
+            <!-- slide -->
+            <div class="swiper-slide panel">
+              <div class="panel__content-col">
+                <div class="panel__content">
+                  <div class="panel__text">
+                    <h1 class="panel__title">Tap House</h1>
+                  </div>
+                </div>
+                <div class="panel__img-col">
+                  <img
+                    src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/61488/taphouse.jpg"
+                    alt=""
+                    class="panel__img"
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- slide -->
+            <div class="swiper-slide panel">
+              <div class="panel__content-col">
+                <div class="panel__content">
+                  <div class="panel__text">
+                    <h1 class="panel__title">Tap House</h1>
+                  </div>
+                </div>
+                <div class="panel__img-col">
+                  <img
+                    src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/61488/taphouse.jpg"
+                    alt=""
+                    class="panel__img"
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- slide -->
+            <!-- slide -->
+            <div class="swiper-slide panel">
+              <div class="panel__content-col">
+                <div class="panel__content">
+                  <div class="panel__text">
+                    <h1 class="panel__title">Tap House</h1>
+                  </div>
+                </div>
+                <div class="panel__img-col">
+                  <img
+                    src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/61488/taphouse.jpg"
+                    alt=""
+                    class="panel__img"
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- slide -->
+
+            <!-- end slide -->
+          </div>
+          <!-- Add Pagination -->
+          <!-- <div class="swiper-pagination"></div> -->
+        </div>
+      </div>
+      <!-- end Slider -->
+    </section>
+    <section class="contact"></section>
+
+    <!-- SCRIPTS -->
+    <!-- Library -->
+    <script src="src/js/jquery-min.js"></script>
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <!-- swiper js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+    <!-- baffle.js -->
+    <script src="src/js/baffle.js"></script>
+
+    <!-- custom js -->
+    <script src="src/js/title-animation.js"></script>
+    <script src="src/js/slider.js"></script>
+    <script src="src/js/scripts.js"></script>
+    <script src="src/js/grid-script.js"></script>
+    <script src="src/js/menu-app.js"></script>
+  </body>
 </html>
