@@ -155,9 +155,6 @@
 
         <!--  -->
         <div class="about-photo">
-          <div class="about-photo__left-name">
-            <p>Я не мусульманин!!!</p>
-          </div>
           <div class="about-photo__content">
             <img src="src/img/VYcyYdkxI7A.jpg" alt="" />
             <p>Дмитрий Быков</p>
@@ -192,7 +189,6 @@
       </div>
       <div class="bg-rect"></div>
       <div class="bg-rect"></div>
-      <p class="about--background-text">profile</p>
 
       <!-- inner
       ========================= -->
@@ -200,27 +196,16 @@
         <h2 class="section-title">Навыки</h2>
         <p class="skill">Ключевые навыки</p>
         <!--  -->
+        <ul class="skills__wrapper">
+          <li class="skills__item">HTML</li>
+          <li class="skills__item">CSS(POST CSS, SASS)</li>
+          <li class="skills__item">JavaScript</li>
+          <li class="skills__item">JQuery</li>
+          <li class="skills__item">React JS</li>
+          <li class="skills__item">Webpack</li>
+          <li class="skills__item">Git/Github</li>
+        </ul>
 
-        <div class="skill-box">
-          <p>Разработка</p>
-          <ul>
-            <li>HTML</li>
-            <li>Css</li>
-            <li>JS</li>
-            <li>JQ</li>
-            <li>React js</li>
-          </ul>
-        </div>
-        <div class="skill-box">
-          <p>Личностные</p>
-          <ul>
-            <li>HTML</li>
-            <li>Css</li>
-            <li>JS</li>
-            <li>JQ</li>
-            <li>React js</li>
-          </ul>
-        </div>
         <!--  -->
       </div>
     </section>
@@ -229,6 +214,37 @@
       =============================================-->
 
     <section class="portfolio" id="portfolio">
+      <!-- background -->
+      <div class="background-wrapper background-wrapper__portfolio">
+        <!-- background -->
+        <div class="grid">
+          <div class="grid__line"></div>
+          <div class="grid__line"></div>
+          <div class="grid__line"></div>
+          <div class="grid__line"></div>
+          <div class="grid__line"></div>
+        </div>
+
+        <div class="bg-text bg-text__portfolio">PORTFOLIO</div>
+      </div>
+
+      <div class="portfolio__inner">
+        <h2 class="section-title">Portfolio</h2>
+        <h3 class="portfolio__subtitle">Мои сайты, сайтетские</h3>
+        <p class="portfolio__description">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially
+        </p>
+      </div>
+    </section>
+
+    <!-- WEBSITES 
+    ======================================================-->
+    <section class="websites">
       <!-- background -->
       <div class="background-wrapper">
         <!-- background -->
@@ -239,46 +255,30 @@
           <div class="grid__line"></div>
           <div class="grid__line"></div>
         </div>
-
-        <div class="bg-text">PORTFOLIO</div>
       </div>
-
-      <div class="portfolio__inner">
-        <h2 class="section-title">Portfolio</h2>
-        <h3 class="portfolio__subtitle">Мои сайты, сайтетские</h3>
-        <p class="portfolio__description">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy
-        </p>
-      </div>
-      <!-- WEBSITES -->
-      <ul class="portfolio-websites">
-        <li class="portfolio-websites__item">
-          <div class="portfolio-websites__info-box">
-            <div class="portfolio-websites__title">
+      <ul class="websites__wrapper">
+        <li class="websites__item">
+          <div class="websites__info-box">
+            <div class="websites__title">
               FITTIMES zelenograd
             </div>
-            <div class="portfolio-websites__description">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi
-              rerum voluptates molestiae amet, eius tempora blanditiis.
-              Perspiciatis incidunt dolore repudiandae dolor, veritatis animi,
-              suscipit temporibus quasi officiis eius quod aliquam.Laudantium,
-              repellat!
+            <div class="websites__description">
+              Landing page посвященный персональным тренировкам. Задача:
+              разработка дизайна, верстка, насполнение контентом. Моя первая
+              работа.
             </div>
             <button class="button button__portfolio"></button>
           </div>
         </li>
-        <li class="portfolio-websites__item">
-          <div class="portfolio-websites__info-box">
-            <div class="portfolio-websites__title">
+        <li class="websites__item">
+          <div class="websites__info-box">
+            <div class="websites__title">
               FITTIMES zelenograd
             </div>
-            <div class="portfolio-websites__description">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi
-              rerum voluptates molestiae amet, eius tempora blanditiis.
-              Perspiciatis incidunt dolore repudiandae dolor, veritatis animi,
-              suscipit temporibus quasi officiis eius quod aliquam.Laudantium,
-              repellat!
+            <div class="websites__description">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an
             </div>
             <button class="button button__portfolio"></button>
           </div>
@@ -373,7 +373,10 @@
       </div>
       <!-- end Slider -->
     </section>
-    <section class="contact"></section>
+    <section class="contact">
+      <h1>контакты</h1>
+      <h2>Связаться со мной</h2>
+    </section>
 
     <!-- SCRIPTS -->
     <!-- Library -->
