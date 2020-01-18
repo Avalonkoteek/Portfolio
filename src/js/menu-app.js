@@ -1,6 +1,6 @@
 const burger = $(".js-burger");
 const nav = $(".js-nav-links");
-const navLinks = $(".nav-link");
+const navLinks = $(".js-nav-link");
 let burgerLines = burger.children(".menu-btn__line");
 
 class StickyNavigation {
