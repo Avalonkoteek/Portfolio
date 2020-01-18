@@ -8,6 +8,9 @@
 }
 /* BG
 ==================== */
+.background-wrapper__about {
+  z-index: -5;
+}
 .background-text__about {
   position: absolute;
   left: 50%;
@@ -17,9 +20,7 @@
   transform: rotate(0deg) translateX(-50%) translateY(10%);
   opacity: 1;
 }
-.background-wrapper__portfolio {
-  z-index: 100;
-}
+
 /* INNER
 ====================== */
 .about__wrapper {
@@ -43,7 +44,7 @@
   position: relative;
   width: 100%;
   height: 380px;
-  border-radius: 5px;
+  border-radius: 3px;
   box-shadow: 11px 9px 20px rgba(0, 0, 0, 0.65);
   overflow: hidden;
 }
@@ -53,12 +54,23 @@
   }
 }
 .about-photo__content img {
-  border-radius: 5px;
+  border-radius: 3px;
   width: 100%;
   height: 100%;
   background-size: cover;
   object-fit: cover;
   transition: all 10s ease-in-out;
+  position: relative;
+}
+
+.about-photo__content::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  opacity: 0.2;
+  background-color: #111;
 }
 
 .about-photo__content p {
@@ -67,7 +79,11 @@
   left: 0;
   width: 100%;
   height: 150px;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
+  background: linear-gradient(
+    to top,
+    rgba(17, 17, 17, 0.9),
+    rgba(17, 17, 17, 0)
+  );
   display: flex;
   justify-content: center;
   align-items: flex-end;
