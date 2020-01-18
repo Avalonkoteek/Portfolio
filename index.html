@@ -43,9 +43,9 @@
         <ul>
           <li class="nav-link"><a href="home">Главная</a></li>
           <li class="nav-link"><a href="about">Обо мне</a></li>
-          <li class="nav-link"><a href="portfolio">Портфолио</a></li>
-          <li class="nav-link"><a href="contact">Портфолио</a></li>
-          <li class="nav-link"><a href="">Контакты</a></li>
+          <li class="nav-link"><a href="websites">Сайты</a></li>
+          <li class="nav-link"><a href="other-works">Приложения</a></li>
+          <li class="nav-link"><a href="contact">Контакты</a></li>
         </ul>
         <div class="social-links social-links__menu">
           <div class="social-links__item">
@@ -72,12 +72,12 @@
       </div>
     </nav>
 
-    <!-- HOME PAGE 
+    <!-- HEADER 
     ===============================================-->
 
     <header id="home">
+      <!-- HEADER BACKGROUND -->
       <div class="background-wrapper js-mousemove3d__wrapper">
-        <!-- background -->
         <div class="grid">
           <div class="grid__line"></div>
           <div class="grid__line"></div>
@@ -85,17 +85,14 @@
           <div class="grid__line"></div>
           <div class="grid__line"></div>
         </div>
-
         <div class="header__rect js-mousemove3d"></div>
         <div class="header__underTitle js-mousemove3d__text">FRONTEND</div>
-        <!-- /background -->
       </div>
+      <!-- /HEADER BACKGROUND -->
 
       <div class="header__inner">
         <!-- content header -->
         <div class="header-main-info-box">
-          <!-- Привет! Меня зовут Дима -->
-          <!-- Я Frontend разработчик -->
           <h1 class="header__title js-header__title">Frontend  разработчик</h1>
           <button class="button button__header">Смотреть резюме</button>
         </div>
@@ -107,27 +104,18 @@
           </p>
           <div class="social-links social-links__header">
             <div class="social-links__item">
-              <img src="/src/img/social/github-logo.svg" alt="" /><img
-                src="/src/img/social/github-logo (1).svg"
-                alt=""
-              />
+              <img src="src/img/social/github-logo.svg" alt="" />
+              <img src="src/img/social/github-logo (1).svg" alt="" />
             </div>
 
             <div class="social-links__item">
-              <img
-                src="/src/img/social/vk-social-network-logo.svg"
-                alt=""
-              /><img
-                src="/src/img/social/vk-social-network-logo (1).svg"
-                alt=""
-              />
+              <img src="src/img/social/vk-social-network-logo.svg" alt="" />
+              <img src="src/img/social/vk-social-network-logo (1).svg" alt="" />
             </div>
 
             <div class="social-links__item">
-              <img src="/src/img/social/telegram.svg" alt="" /><img
-                src="/src/img/social/telegram (1).svg"
-                alt=""
-              />
+              <img src="src/img/social/telegram.svg" alt="" />
+              <img src="src/img/social/telegram (1).svg" alt="" />
             </div>
           </div>
         </div>
@@ -145,8 +133,11 @@
         <div class="grid__line"></div>
         <div class="grid__line"></div>
       </div>
-
-      <p class="background-text background-text__about">profile</p>
+      <p
+        class="background-text background-text__about js-background-text-parallax"
+      >
+        profile
+      </p>
 
       <!-- about inner -->
       <div class="about__wrapper">
@@ -161,7 +152,7 @@
           </div>
         </div>
         <div class="about-text">
-          <p class="about-text__title">Кто я такой?</p>
+          <p class="about-text__title">Кто этот парень?</p>
           <p class="about-text__description">
             Я начинающий frontend разработчик из Санкт-петербурга. мечтаю стать
             проффесиональным разработчиком сайтов и приложений, сочитающих в
@@ -180,15 +171,9 @@
     <section class="skills">
       <!-- background
       ========================= -->
-      <div class="grid">
-        <div class="grid__line"></div>
-        <div class="grid__line"></div>
-        <div class="grid__line"></div>
-        <div class="grid__line"></div>
-        <div class="grid__line"></div>
-      </div>
-      <div class="bg-rect"></div>
-      <div class="bg-rect"></div>
+
+      <div class="bg-rect js-background-text-parallax"></div>
+      <div class="bg-rect js-background-text-parallax"></div>
 
       <!-- inner
       ========================= -->
@@ -217,13 +202,6 @@
       <!-- background -->
       <div class="background-wrapper background-wrapper__portfolio">
         <!-- background -->
-        <div class="grid">
-          <div class="grid__line"></div>
-          <div class="grid__line"></div>
-          <div class="grid__line"></div>
-          <div class="grid__line"></div>
-          <div class="grid__line"></div>
-        </div>
 
         <div class="bg-text bg-text__portfolio">PORTFOLIO</div>
       </div>
@@ -246,7 +224,7 @@
     ======================================================-->
     <section class="websites">
       <!-- background -->
-      <div class="background-wrapper">
+      <div class="background-wrapper  background-wrapper__websites">
         <!-- background -->
         <div class="grid">
           <div class="grid__line"></div>
@@ -258,6 +236,7 @@
       </div>
       <ul class="websites__wrapper">
         <li class="websites__item">
+          <div class="websites__image-website"></div>
           <div class="websites__info-box">
             <div class="websites__title">
               FITTIMES zelenograd
@@ -267,10 +246,17 @@
               разработка дизайна, верстка, насполнение контентом. Моя первая
               работа.
             </div>
-            <button class="button button__portfolio"></button>
+            <!--  -->
+            <div class="websites__links">
+              <button class="button button__portfolio">
+                <a>Смотреть работу</a>
+              </button>
+              <a class="social-icon github-logo"></a>
+            </div>
           </div>
         </li>
         <li class="websites__item">
+          <div class="websites__image-website"></div>
           <div class="websites__info-box">
             <div class="websites__title">
               FITTIMES zelenograd
@@ -288,23 +274,34 @@
 
     <!-- AFTER PORTFOLIO
     ========================================= -->
-    <section class="after-porfolio ">
-      <h2 class="section-title">Другие работы</h2>
-      <p class="section-deskription">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-        blanditiis cumque error! Est reiciendis earum accusamus totam
-        praesentium voluptas excepturi dicta! laudantium voluptate, quis iure
-        voluptatem iusto, quasi alias eligendi dolorem voluptatum soluta!
-        Aliquam pariatur iusto, architecto inventore hic esse dolorem dolores
-        distinctio vitae placeat voluptatem, excepturi dolorum!
-      </p>
+    <section class="other-works">
+      <!-- info box -->
+      <div class="other-works__info-container">
+        <!-- bg -->
+        <div class="background-wrapper">
+          <!-- background -->
+        </div>
+        <!--  -->
+        <h2 class="section-title">Другие работы</h2>
+        <div class="other-works__subtitle">
+          Web приложения и различные наработки
+        </div>
+        <p class="other-works__deskription">
+          Я интересуюсь разработкой разных вещей. В этом разделе собраны мои
+          мини и не мини проекты связанные с frontend разработкой. Новые
+          приложения будут появляться каждую неделю, я стараюсь максимально
+          эстетично одходить к решеню задачи.Здесь преставлены вэб приложения,
+          игры, и всякая всячина написаная мной
+        </p>
+        <!--  -->
+      </div>
       <!-- SLIDER
 			======================================== -->
-      <div class="wrapper">
+      <div class="other-works__wrapper">
         <!-- BG TEXT
 					=============================== -->
-        <div class="bg-text">
-          <h1>tokyotokyo</h1>
+        <div class="bg-text__after-portfolio">
+          <p>React</p>
         </div>
 
         <!-- SLIDER
@@ -312,58 +309,24 @@
         <div class="swiper-container ">
           <div class="swiper-wrapper">
             <!-- slide -->
-            <div class="swiper-slide panel">
-              <div class="panel__content-col">
-                <div class="panel__content">
-                  <div class="panel__text">
-                    <h1 class="panel__title">Tap House</h1>
+            <div class="swiper-slide work-item">
+              <div class="work-item__content-col">
+                <div class="work-item__content">
+                  <div class="work-item__counter">001</div>
+                  <div class="work-item__text">
+                    <p class="work-item__description">Прилажение на react js</p>
+                    <h3 class="work-item__title">Прогноз погоды</h3>
                   </div>
                 </div>
-                <div class="panel__img-col">
+                <div class="work-item__img-col">
                   <img
                     src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/61488/taphouse.jpg"
                     alt=""
-                    class="panel__img"
+                    class="work-item__img"
                   />
                 </div>
               </div>
             </div>
-            <!-- slide -->
-            <div class="swiper-slide panel">
-              <div class="panel__content-col">
-                <div class="panel__content">
-                  <div class="panel__text">
-                    <h1 class="panel__title">Tap House</h1>
-                  </div>
-                </div>
-                <div class="panel__img-col">
-                  <img
-                    src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/61488/taphouse.jpg"
-                    alt=""
-                    class="panel__img"
-                  />
-                </div>
-              </div>
-            </div>
-            <!-- slide -->
-            <!-- slide -->
-            <div class="swiper-slide panel">
-              <div class="panel__content-col">
-                <div class="panel__content">
-                  <div class="panel__text">
-                    <h1 class="panel__title">Tap House</h1>
-                  </div>
-                </div>
-                <div class="panel__img-col">
-                  <img
-                    src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/61488/taphouse.jpg"
-                    alt=""
-                    class="panel__img"
-                  />
-                </div>
-              </div>
-            </div>
-            <!-- slide -->
 
             <!-- end slide -->
           </div>
@@ -374,8 +337,13 @@
       <!-- end Slider -->
     </section>
     <section class="contact">
-      <h1>контакты</h1>
-      <h2>Связаться со мной</h2>
+      <div class="background-wrapper__contact">
+        <!-- background -->
+      </div>
+      <div class="contact__wrapper">
+        <h2>контакты</h2>
+        <h3>Связаться со мной</h3>
+      </div>
     </section>
 
     <!-- SCRIPTS -->
@@ -394,5 +362,6 @@
     <script src="src/js/scripts.js"></script>
     <script src="src/js/grid-script.js"></script>
     <script src="src/js/menu-app.js"></script>
+    <script src="src/js/paralax.js"></script>
   </body>
 </html>

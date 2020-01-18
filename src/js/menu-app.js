@@ -22,12 +22,13 @@ class StickyNavigation {
       event.preventDefault();
 
       let scrollTop = $("#" + element).offset().top;
-      $("html, body").animate({ scrollTop: scrollTop }, 1000);
+
       if (burger.hasClass("toggle")) {
         nav.removeClass("nav-active");
         burger.removeClass("toggle");
         burgerLines.removeClass("menu-btn__line--toggle");
       }
+      $("html, body").animate({ scrollTop: scrollTop }, 1000);
     });
     // scroll
 

@@ -9,11 +9,11 @@ var swiper = new Swiper(".swiper-container", {
   }
 });
 
-var $body = $("body"),
-  $wrapper = $(".panel"),
-  $panel = $(".panel__content-col"),
-  $pContent = $(".panel__content"),
-  $img = $(".panel__img-col");
+var $body = $(".swiper-wrapper"),
+  $wrapper = $(".swiper-wrapper"),
+  $panel = $(".work-item__content-col"),
+  $pContent = $(".work-item__content"),
+  $img = $(".work-item__img-col");
 
 function initTilt() {
   TweenMax.set([$pContent, $img], { transformStyle: "preserve-3d" });
@@ -24,8 +24,8 @@ function initTilt() {
 }
 
 function tilt(cx, cy) {
-  var sxPos = ((cx / $wrapper.width()) * 100 - 50) * 100;
-  var syPos = (cy / $wrapper.height()) * 10;
+  var sxPos = ((cx / $wrapper.width()) * 100 - 50) * 2;
+  var syPos = ((cy / $wrapper.height()) * 100 - 50) * 0.03;
   TweenMax.to($pContent, 2, {
     rotationY: -0.03 * sxPos,
     rotationX: 0.03 * syPos,
@@ -48,81 +48,80 @@ $body.mouseleave(function() {
 
 initTilt();
 
-// slider.on('slideChange', function () {
-//   TweenMax.to('.slide-text span', .2, {
-//     y: '-100px',
-//   })
-//   TweenMax.to('.slide-number span', .2, {
-//     x: '-100px',
-//   })
-//   TweenMax.to('.swiper-slide-active', .5, {
-//     scale: .85
-//   })
-// })
+// slider.on("slideChange", function() {
+//   TweenMax.to(".slide-text span", 0.2, {
+//     y: "-100px"
+//   });
+//   TweenMax.to(".slide-number span", 0.2, {
+//     x: "-100px"
+//   });
+//   TweenMax.to(".swiper-slide-active", 0.5, {
+//     scale: 0.85
+//   });
+// });
 
-// slider.on('slideChangeTransitionEnd', function () {
-
-//   TweenMax.to('.slide-text span', .2, {
+// slider.on("slideChangeTransitionEnd", function() {
+//   TweenMax.to(".slide-text span", 0.2, {
 //     y: 0,
-//     delay: .5
-//   })
-//   TweenMax.to('.slide-text span', 0, {
-//     y: '100px',
-//   })
+//     delay: 0.5
+//   });
+//   TweenMax.to(".slide-text span", 0, {
+//     y: "100px"
+//   });
 
-//   TweenMax.to('.slide-number span', .2, {
+//   TweenMax.to(".slide-number span", 0.2, {
 //     x: 0,
-//     delay: .7
-//   })
-//   TweenMax.to('.slide-number span', 0, {
-//     x: '100px',
-//   })
+//     delay: 0.7
+//   });
+//   TweenMax.to(".slide-number span", 0, {
+//     x: "100px"
+//   });
 
-//   TweenMax.to('.swiper-slide-active', .5, {
+//   TweenMax.to(".swiper-slide-active", 0.5, {
 //     scale: 1,
-//     ease: Power4.easeOut,
-//   })
+//     ease: Power4.easeOut
+//   });
 
-//   TweenMax.to('.swiper-slide-active .slide-text', 0, {
+//   TweenMax.to(".swiper-slide-active .slide-text", 0, {
 //     autoAlpha: 1
-//   })
-//   TweenMax.to('.swiper-slide-active .slide-number', 0, {
+//   });
+//   TweenMax.to(".swiper-slide-active .slide-number", 0, {
 //     autoAlpha: 1
-//   })
+//   });
 
-//   TweenMax.to('.swiper-slide-next .slide-text', 0, {
+//   TweenMax.to(".swiper-slide-next .slide-text", 0, {
 //     autoAlpha: 0
-//   })
-//   TweenMax.to('.swiper-slide-prev .slide-text', 0, {
+//   });
+//   TweenMax.to(".swiper-slide-prev .slide-text", 0, {
 //     autoAlpha: 0
-//   })
+//   });
 
-//   TweenMax.to('.swiper-slide-next .slide-number', 0, {
+//   TweenMax.to(".swiper-slide-next .slide-number", 0, {
 //     autoAlpha: 0
-//   })
-//   TweenMax.to('.swiper-slide-prev .slide-number', 0, {
+//   });
+//   TweenMax.to(".swiper-slide-prev .slide-number", 0, {
 //     autoAlpha: 0
-//   })
-// })
+//   });
+// });
 
-// TweenMax.to('.swiper-slide-next .slide-text', 0, {
+// TweenMax.to(".swiper-slide-next .slide-text", 0, {
 //   autoAlpha: 0
-// })
-// TweenMax.to('.swiper-slide-prev .slide-text', 0, {
+// });
+// TweenMax.to(".swiper-slide-prev .slide-text", 0, {
 //   autoAlpha: 0
-// })
+// });
 
-// TweenMax.to('.swiper-slide-next .slide-number', 0, {
+// TweenMax.to(".swiper-slide-next .slide-number", 0, {
 //   autoAlpha: 0
-// })
-// TweenMax.to('.swiper-slide-prev .slide-number', 0, {
+// });
+// TweenMax.to(".swiper-slide-prev .slide-number", 0, {
 //   autoAlpha: 0
-// })
+// });
 
-// TweenMax.to('.swiper-slide', 0, {
-//   scale: .85,
-// })
+// TweenMax.to(".swiper-slide", 0, {
+//   scale: 0.85
+// });
 
-// TweenMax.to('.swiper-slide-active', 0, {
-//   scale: 1,
-// })
+// TweenMax.to(".swiper-slide-active", 0, {
+//   scale: 1
+// });
