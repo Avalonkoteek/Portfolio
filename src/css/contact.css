@@ -39,8 +39,11 @@
   margin-bottom: 60px;
 }
 .contact__description {
+  text-align: center;
+  color: #adadad;
 }
 .contact__description span {
+  font-size: 20px;
 }
 .contact__social {
   text-align: center;
