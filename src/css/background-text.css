@@ -4,9 +4,15 @@
   letter-spacing: 0.1em;
   text-shadow: 0px 0 20px rgba(0, 0, 0, 0.2);
   font-family: "assc";
-  font-size: 300px;
+  font-size: 250px;
   text-align: center;
   color: transparent;
   -webkit-text-stroke: 4px #151515;
   text-transform: uppercase;
+}
+
+@media (max-width: 786px) {
+  .background-text {
+    display: none;
+  }
 }
