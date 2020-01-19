@@ -16,7 +16,7 @@
 
   <body class="transform---">
     <!-- NAVIGATION 
-    ===============================================-->
+    ==========================================================================-->
 
     <nav class="js-nav">
       <div class="navbar">
@@ -51,22 +51,22 @@
         </ul>
         <div class="social-links social-links__menu">
           <div class="social-links__item">
-            <img src="/src/img/social/github-logo.svg" alt="" /><img
-              src="/src/img/social/github-logo (1).svg"
+            <img src="src/img/social/github-logo.svg" alt="" /><img
+              src="src/img/social/github-logo (1).svg"
               alt=""
             />
           </div>
 
           <div class="social-links__item">
-            <img src="/src/img/social/vk-social-network-logo.svg" alt="" /><img
-              src="/src/img/social/vk-social-network-logo (1).svg"
+            <img src="src/img/social/vk-social-network-logo.svg" alt="" /><img
+              src="src/img/social/vk-social-network-logo (1).svg"
               alt=""
             />
           </div>
 
           <div class="social-links__item">
-            <img src="/src/img/social/telegram.svg" alt="" /><img
-              src="/src/img/social/telegram (1).svg"
+            <img src="src/img/social/telegram.svg" alt="" /><img
+              src="src/img/social/telegram (1).svg"
               alt=""
             />
           </div>
@@ -75,7 +75,7 @@
     </nav>
 
     <!-- HEADER 
-    ===============================================-->
+    ==========================================================================-->
 
     <header id="home">
       <!-- HEADER BACKGROUND -->
@@ -92,6 +92,7 @@
       </div>
       <!-- /HEADER BACKGROUND -->
 
+      <!-- HEADER CONTENT -->
       <div class="header__inner">
         <!-- content header -->
         <div class="header-main-info-box">
@@ -127,7 +128,7 @@
     </header>
 
     <!-- ABOUT SECTION
-    =============================================== -->
+    ==========================================================================-->
     <section class="about" id="about">
       <!-- background  -->
       <div class="background-wrapper background-wrapper__about">
@@ -172,14 +173,22 @@
     </section>
 
     <!-- SKILLS 
-      =============================================-->
+      ========================================================================-->
 
     <section class="skills">
       <!-- background
       ========================= -->
-
-      <div class="bg-rect js-background-text-parallax"></div>
-      <div class="bg-rect js-background-text-parallax"></div>
+      <div class="background-wrapper">
+        <div class="grid">
+          <div class="grid__line"></div>
+          <div class="grid__line"></div>
+          <div class="grid__line"></div>
+          <div class="grid__line"></div>
+          <div class="grid__line"></div>
+        </div>
+        <div class="bg-rect js-background-text-parallax"></div>
+        <div class="bg-rect js-background-text-parallax"></div>
+      </div>
 
       <!-- inner
       ========================= -->
@@ -202,7 +211,7 @@
     </section>
 
     <!-- PORTFOLIO 
-      =============================================-->
+      ========================================================================-->
 
     <section class="portfolio" id="portfolio">
       <!-- background -->
@@ -213,21 +222,19 @@
       </div>
 
       <div class="portfolio__inner">
-        <h2 class="section-title">Portfolio</h2>
-        <h3 class="portfolio__subtitle">Мои сайты, сайтетские</h3>
+        <h2 class="section-title">Портфолио</h2>
+        <h3 class="portfolio__subtitle">Веб сайты</h3>
         <p class="portfolio__description">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially
+          Мне по кайфу делать сайтетские, причем все от дизайна до сео
+          оптимизации. Пока в данном разделе две работы выполненые на htm5 css3?
+          jequery и javascript. Люблю чет-то делать и видеть в живую результат)
         </p>
       </div>
     </section>
 
     <!-- WEBSITES 
-    ======================================================-->
+    ==========================================================================-->
+
     <section class="websites">
       <!-- background -->
       <div class="background-wrapper  background-wrapper__websites">
@@ -242,7 +249,9 @@
       </div>
       <ul class="websites__wrapper">
         <li class="websites__item">
-          <div class="websites__image-website"></div>
+          <div class="websites__image-website">
+            <img src="src/img/fittimes.jpg" alt="" />
+          </div>
           <div class="websites__info-box">
             <div class="websites__title">
               FITTIMES zelenograd
@@ -262,30 +271,40 @@
           </div>
         </li>
         <li class="websites__item">
-          <div class="websites__image-website"></div>
+          <div class="websites__image-website">
+            <img src="src/img/fotovideoservises.jpg" alt="" />
+          </div>
           <div class="websites__info-box">
             <div class="websites__title">
-              FITTIMES zelenograd
+              Видеосъемка недвижимости
             </div>
             <div class="websites__description">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an
+              Многостраничный сайт посвященный фото, видео и аэросъемкой
+              недвижимости. Мной реализованно опять таки все от дизайна до
+              конечного вида
             </div>
-            <button class="button button__portfolio"></button>
+            <button class="button button__portfolio">Смотреть работу</button>
           </div>
         </li>
       </ul>
     </section>
 
-    <!-- AFTER PORTFOLIO
-    ========================================= -->
+    <!-- OTHER WORKS
+    ==========================================================================-->
+
     <section class="other-works">
       <!-- info box -->
       <div class="other-works__info-container">
         <!-- bg -->
         <div class="background-wrapper">
           <!-- background -->
+          <div class="grid">
+            <div class="grid__line"></div>
+            <div class="grid__line"></div>
+            <div class="grid__line"></div>
+            <div class="grid__line"></div>
+            <div class="grid__line"></div>
+          </div>
         </div>
         <!--  -->
         <h2 class="section-title">Другие работы</h2>
@@ -333,6 +352,25 @@
                 </div>
               </div>
             </div>
+            <!-- slide -->
+            <div class="swiper-slide work-item">
+              <div class="work-item__content-col">
+                <div class="work-item__content">
+                  <div class="work-item__counter">001</div>
+                  <div class="work-item__text">
+                    <p class="work-item__description">Прилажение на react js</p>
+                    <h3 class="work-item__title">Прогноз погоды</h3>
+                  </div>
+                </div>
+                <div class="work-item__img-col">
+                  <img
+                    src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/61488/taphouse.jpg"
+                    alt=""
+                    class="work-item__img"
+                  />
+                </div>
+              </div>
+            </div>
 
             <!-- end slide -->
           </div>
@@ -342,17 +380,58 @@
       </div>
       <!-- end Slider -->
     </section>
+
+    <!-- CONTACT
+    ==========================================================================-->
     <section class="contact">
-      <div class="background-wrapper__contact">
+      <div class="background-wrapper background-wrapper__contact">
         <!-- background -->
+
+        <div class="grid">
+          <div class="grid__line"></div>
+          <div class="grid__line"></div>
+          <div class="grid__line"></div>
+          <div class="grid__line"></div>
+          <div class="grid__line"></div>
+        </div>
+        <div class="bg__rect"></div>
       </div>
       <div class="contact__wrapper">
-        <h2>контакты</h2>
-        <h3>Связаться со мной</h3>
+        <h2 class="section-title">контакты</h2>
+        <h3 class="contact__subtitle">Связаться со мной</h3>
+        <div class="contact__description">
+          Со мной можно связаться по телефону:
+          <a><span>+7(985)-747-61-80</span></a> или написать на почту
+          <a><span>BykovDmitry.42@yandex.ru</span></a>
+        </div>
+        <p class="contact__social">Социальные сети</p>
+        <div class="social-links social-links__contact">
+          <div class="social-links__item">
+            <img src="src/img/social/github-logo.svg" alt="" /><img
+              src="src/img/social/github-logo (1).svg"
+              alt=""
+            />
+          </div>
+
+          <div class="social-links__item">
+            <img src="src/img/social/vk-social-network-logo.svg" alt="" /><img
+              src="src/img/social/vk-social-network-logo (1).svg"
+              alt=""
+            />
+          </div>
+
+          <div class="social-links__item">
+            <img src="src/img/social/telegram.svg" alt="" /><img
+              src="src/img/social/telegram (1).svg"
+              alt=""
+            />
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- SCRIPTS -->
+    <!-- SCRIPTS
+    ===========================================================================-->
     <!-- Library -->
     <script src="src/js/jquery-min.js"></script>
     <!-- gsap -->

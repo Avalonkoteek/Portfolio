@@ -160,12 +160,12 @@
   align-items: center;
 }
 .skills__wrapper {
+  background-color: #fff;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: calc(100% + 120px);
-  padding-left: calc(20% + 60px);
-  padding-right: calc(20% + 60px);
+  width: 100%;
+  max-width: 900px;
 }
 .skills__item {
   list-style: none;
