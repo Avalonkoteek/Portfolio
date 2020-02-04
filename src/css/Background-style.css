@@ -1,8 +1,24 @@
+/* Background-wrapper */
 .background-wrapper {
   height: 100%;
   width: 100%;
+  position: absolute;
+  z-index: 0;
 }
 
+.bg-title {
+  z-index: 1;
+  opacity: 1;
+  letter-spacing: 0.1em;
+  text-shadow: 0px 0 20px rgba(0, 0, 0, 0.2);
+  font-family: "assc";
+  font-size: 200px;
+  color: transparent;
+  -webkit-text-stroke: 4px #151515;
+  text-transform: uppercase;
+}
+
+/* GRID */
 .grid {
   position: absolute;
   left: 0;
@@ -10,7 +26,7 @@
   height: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  z-index: 0;
+
   top: 0;
 }
 .grid__line {
@@ -38,4 +54,15 @@
   .grid {
     display: none;
   }
+}
+.background-line-group {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+}
+.background-line-group img {
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  object-fit: contain;
 }

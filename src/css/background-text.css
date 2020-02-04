@@ -9,6 +9,7 @@
   color: transparent;
   -webkit-text-stroke: 4px #151515;
   text-transform: uppercase;
+  color: #111;
 }
 
 @media (max-width: 786px) {

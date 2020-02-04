@@ -2,9 +2,9 @@
 .about {
   width: 100%;
   position: relative;
-  padding: 180px var(--padding);
+  padding: var(--padding-section-top) var(--padding);
   padding-bottom: 0;
-  color: #adadad;
+  color: #999999;
 }
 /* BG
 ==================== */
@@ -88,7 +88,7 @@
   justify-content: center;
   align-items: flex-end;
   padding-bottom: 20px;
-  color: #aeaeae;
+  color: #999999;
 }
 .about-text__title {
   margin-top: 50px;
@@ -109,8 +109,7 @@
 .about-text__description {
   letter-spacing: 0.2px;
   text-align: justify;
-  color: #aeaeae;
-  font-size: 18px;
+  color: #999999;
 }
 
 /* SKILLS
@@ -133,14 +132,15 @@
   left: 80%;
   top: 300px;
 }
-/*  */
+/*  SKILLS
+*********************************************************/
 .skills {
   width: 100%;
   position: relative;
   display: flex;
   flex-direction: column;
   padding: 0 var(--padding);
-  padding-top: 100px;
+  padding-top: var(--padding-section-top);
 }
 .skill {
   width: 100%;
@@ -148,8 +148,8 @@
   font-size: 30px;
   color: #fff;
   text-transform: uppercase;
-  margin-top: 60px;
-  margin-bottom: 60px;
+
+  margin-bottom: 80px;
   position: relative;
   z-index: 2;
 }
@@ -160,35 +160,45 @@
   align-items: center;
 }
 .skills__wrapper {
-  background-color: #fff;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
-  width: 100%;
-  max-width: 900px;
 }
+.skillsItem__group {
+  display: flex;
+  flex-direction: column;
+}
+
 .skills__item {
   list-style: none;
   color: #999999;
   position: relative;
   margin-bottom: 20px;
-  min-width: 200px;
+
   transition: all 0.4s ease;
   user-select: none;
-}
 
+  padding-left: 40px;
+  padding-right: 40px;
+}
+@media (min-width: 1280px) {
+  .skills__item {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
 .skills__item::before {
   content: "";
   position: absolute;
   top: 50%;
-  left: -40px;
+  left: 0px;
   width: 20px;
   height: 1px;
   background-color: #3b3b3b;
   transition: all 1s ease;
 }
 .skills__item:hover::before {
-  left: -50px;
+  left: -10px;
   width: 30px;
 }
 .skills__item:hover {

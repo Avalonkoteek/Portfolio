@@ -15,39 +15,40 @@ var $body = $(".swiper-wrapper"),
   $pContent = $(".work-item__content"),
   $img = $(".work-item__img-col");
 
-function initTilt() {
-  TweenMax.set([$pContent, $img], { transformStyle: "preserve-3d" });
+if (window.screen.width >= 786) {
+  function initTilt() {
+    TweenMax.set([$pContent, $img], { transformStyle: "preserve-3d" });
 
-  $wrapper.mousemove(function(e) {
-    tilt(e.pageX, e.pageY);
+    $wrapper.mousemove(function(e) {
+      tilt(e.pageX, e.pageY);
+    });
+  }
+
+  function tilt(cx, cy) {
+    var sxPos = ((cx / $wrapper.width()) * 100 - 50) * 2;
+    var syPos = ((cy / $wrapper.height()) * 100 - 50) * 0.03;
+    TweenMax.to($pContent, 2, {
+      rotationY: -0.03 * sxPos,
+      rotationX: 0.03 * syPos,
+      transformPerspective: 500,
+      transformOrigin: "center center -400",
+      ease: Expo.easeOut
+    });
+    TweenMax.to($img, 2, {
+      rotationY: -0.03 * sxPos,
+      rotationX: 0.03 * syPos,
+      transformPerspective: 500,
+      transformOrigin: "center center -200",
+      ease: Expo.easeOut
+    });
+  }
+
+  $body.mouseleave(function() {
+    tilt($wrapper.width() / 2, $wrapper.height() / 2);
   });
+
+  initTilt();
 }
-
-function tilt(cx, cy) {
-  var sxPos = ((cx / $wrapper.width()) * 100 - 50) * 2;
-  var syPos = ((cy / $wrapper.height()) * 100 - 50) * 0.03;
-  TweenMax.to($pContent, 2, {
-    rotationY: -0.03 * sxPos,
-    rotationX: 0.03 * syPos,
-    transformPerspective: 500,
-    transformOrigin: "center center -400",
-    ease: Expo.easeOut
-  });
-  TweenMax.to($img, 2, {
-    rotationY: -0.03 * sxPos,
-    rotationX: 0.03 * syPos,
-    transformPerspective: 500,
-    transformOrigin: "center center -200",
-    ease: Expo.easeOut
-  });
-}
-
-$body.mouseleave(function() {
-  tilt($wrapper.width() / 2, $wrapper.height() / 2);
-});
-
-initTilt();
-
 // slider.on("slideChange", function() {
 //   TweenMax.to(".slide-text span", 0.2, {
 //     y: "-100px"

@@ -79,16 +79,19 @@ nav {
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     font-size: 18px;
   }
+  .social-links__menu {
+    display: none;
+  }
 }
 
 .nav-link {
   display: flex;
   align-items: center;
   justify-content: center;
-
+  position: relative;
   cursor: pointer;
   transition: all 0.5s ease;
-  color: #111;
+  background-color: rgba(17, 17, 17, 0);
 }
 
 .nav-link > a {
@@ -102,7 +105,7 @@ nav {
 
 .nav-link:hover {
   color: #fff;
-  background: #151515;
+  background-color: rgba(17, 17, 17, 1);
   box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.55);
   text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.9);
 }
