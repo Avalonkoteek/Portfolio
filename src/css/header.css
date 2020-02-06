@@ -85,17 +85,7 @@ header {
   text-transform: uppercase;
   opacity: 0.6;
 }
-@media (max-width: 786px) {
-  .header__underTitle {
-    display: none;
-  }
-  .header-bottom-element {
-    display: none;
-  }
-  .social-links__header {
-    margin: auto;
-  }
-}
+
 /* Content */
 
 .header__inner {
@@ -161,4 +151,18 @@ header {
 }
 .header__city {
   text-transform: uppercase;
+}
+@media (max-width: 786px) {
+  .header__underTitle {
+    display: none;
+  }
+  .header-bottom-element {
+    display: none;
+  }
+  .social-links__header {
+    margin: auto;
+  }
+  .header__title {
+    font-size: 30px;
+  }
 }
