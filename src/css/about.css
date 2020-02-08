@@ -1,3 +1,5 @@
+
+
 /* GENERAL */
 .about {
   width: 100%;
@@ -94,16 +96,22 @@
   margin-top: 50px;
   margin-bottom: 60px;
   text-align: right;
-  font-size: 30px;
+  font-size: var(--font-size__subtitile);
   color: #fff;
   text-transform: uppercase;
 }
 @media (max-width: 885px) {
+  .about__wrapper{
+    flex-direction: column;
+  }
   .about-text__title {
     text-align: left;
+    margin-bottom: 30px;
   }
   .about-text {
     padding-left: 0;
+    flex-grow: 1;
+    flex-basis: 260px;
   }
 }
 .about-text__description {
