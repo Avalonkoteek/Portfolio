@@ -18,6 +18,23 @@
   text-transform: uppercase;
 }
 
+/* Shapes */
+.bg-rect {
+  border: 40px solid #121212;
+  position: absolute;
+  width: 220px;
+  height: 220px;
+}
+
+
+.bg-circle{
+  position: absolute;
+  width: 220px;
+height: 220px;
+  border-radius: 110px;
+  border:30px solid #121212;
+}
+
 /* GRID */
 .grid {
   position: absolute;
@@ -40,11 +57,12 @@
 
 .lightLine {
   background-color: #fff;
-  height: 50px;
+height: 200px;
   width: 1px;
   position: absolute;
-  transform: translateY(-100%);
-  transition: all 0.2s ease-in-out;
+transform: translateY(-100%);
+  animation: 2s gridLine 10s ease-in-out infinite;
+
 }
 .lightLine--active {
   transform: translateY(100%);
@@ -54,7 +72,11 @@
   .grid {
     display: none;
   }
+  .background-line-group{
+    display: none;
+  }
 }
+/* Line group */
 .background-line-group {
   position: absolute;
   width: 400px;
@@ -65,4 +87,20 @@
   height: 100%;
   background-size: contain;
   object-fit: contain;
+}
+/* Line group */
+
+@keyframes gridLine{
+  0%{
+    transform: translateY(-100%);
+    height: 200px;
+  }
+  50%{
+    transform: translateY(400%);
+    height: 200px;
+  }
+  100%{
+    transform: translateY(900%);
+    height: 200px;
+  }
 }

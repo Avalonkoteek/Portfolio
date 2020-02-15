@@ -47,6 +47,12 @@ header {
 }
 
 /*  BG  */
+.background-line-group__header{
+  bottom: -110px;
+  right: -50px;
+  z-index: -1;
+  opacity: 0.4;
+}
 .header__rect {
   position: absolute;
   width: 80%;

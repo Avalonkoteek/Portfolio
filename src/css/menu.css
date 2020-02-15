@@ -196,6 +196,7 @@ nav {
   opacity: 1;
   transition: all 0.4 ease;
   position: absolute;
+  
 }
 
 .menu-btn__line--toggle:nth-of-type(2) {
@@ -203,11 +204,30 @@ nav {
 }
 
 .menu-btn__line--toggle:first-of-type {
+  
+  
+  animation: burger--toggele__first 0.4s ease;
   transform: rotateZ(45deg);
-  transition: all 0.4 ease;
 }
 
 .menu-btn__line--toggle:last-of-type {
-  transition: all 0.4 ease;
+  animation: burger--toggele__second 0.4s ease;
   transform: rotateZ(-45deg);
+
+}
+@keyframes burger--toggele__first{
+  0%{
+    transform: rotateZ(0deg);
+  }
+  100%{
+    transform: rotateZ(45deg);
+  }
+}
+@keyframes burger--toggele__second{
+  0%{
+    transform: rotateZ(0deg);
+  }
+  100%{
+    transform: rotateZ(-45deg);
+  }
 }

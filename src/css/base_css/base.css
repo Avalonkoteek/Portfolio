@@ -9,10 +9,7 @@ html {
   font-style: normal;
   font-size: 18px;
 }
-:root {
-  --padding: 60px;
-  --padding-second: 120px;
-}
+
 
 a {
   text-decoration: none;
@@ -55,6 +52,7 @@ p {
 }
 
 @media (max-width: 780px) {
+
   html {
     font-size: 16px;
   }
@@ -69,6 +67,9 @@ p {
 @media (max-width: 420px) {
   main > section {
     padding: 60px 5px;
+  }
+  :root{
+    --padding:15px
   }
 }
 

@@ -1,5 +1,5 @@
 :root {
-  --padding-first: 60px;
+  --padding: 60px;
   --padding-second: 180px;
   --title-color: #fff;
   --bg-color: #111;
@@ -11,14 +11,14 @@
 }
 @media(max-width:800px){
   :root {
-    --padding-first: 40px;
+    --padding: 40px;
 
     --font-size__subtitile:30px;
   }
 }
 @media(max-width:360px){
   :root {
-    --padding-first: 20px;
+    --padding: 20px;
 
     --font-size__subtitile:24px;
   }

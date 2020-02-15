@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="src/css/after-portfolio.css" />
   </head>
 
-  <body class="transform---">
+  <body >
     <!-- NAVIGATION 
     ==========================================================================-->
 
@@ -88,8 +88,8 @@
           <div class="grid__line"></div>
           <div class="grid__line"></div>
         </div>
-        <div class="background-line-group">
-          <img src="./src/img/background/BG-line-group.svg" alt="" />
+        <div class="background-line-group background-line-group__header">
+          <img src="./src/img/background/line-dec.svg" alt="" />
         </div>
         <div class="header__rect js-mousemove3d"></div>
         <div class="header__underTitle js-mousemove3d__text">FRONTEND</div>
@@ -148,6 +148,10 @@
         >
           profile
         </p>
+        <div class="bg-circle bg-circle__about"></div>
+        <div class="background-line-group background-line-group__about">
+          <img src="./src/img/background/line-dec.svg" alt="" />
+        </div>
       </div>
 
       <!-- about inner -->
@@ -165,11 +169,7 @@
         <div class="about-text">
           <p class="about-text__title">Кто этот парень?</p>
           <p class="about-text__description">
-            Я начинающий frontend разработчик из Санкт-петербурга. Моя цель развиться до мечтаю стать
-            проффесиональным разработчиком сайтов и приложений, сочитающих в
-            себе функциональность и эстетичную визуальную составляющию. Не пью,
-            иповедаю пастофарианство, ненавижу стили, когда алиса за нас будет
-            все делать????
+            Я начинающий frontend разработчик из Санкт-петербурга. Разрабатываю сайты, веб сервисы и приложения. Люблю все этапы разработки проекта от составления дизайна довывода его на рынок. В данный момент активно изучаю React. Трудолюбив и общителен) Со списком моих работ можно познакомиться чуть ниже.
           </p>
         </div>
         <!--  -->
@@ -190,8 +190,8 @@
           <div class="grid__line"></div>
           <div class="grid__line"></div>
         </div>
-        <div class="bg-rect js-background-text-parallax"></div>
-        <div class="bg-rect js-background-text-parallax"></div>
+        <div class="bg-rect js-background-text-parallax bg-rect__skills" ></div>
+       
       </div>
 
       <!-- inner
@@ -215,6 +215,7 @@
           </div>
           <div class="skillsItem__group">
             <li class="skills__item">Git/Github</li>
+            <li class="skills__item">UX/UI</li>
           </div>
         </ul>
 
@@ -237,15 +238,16 @@
           <div class="grid__line"></div>
         </div>
         <div class="bg-text bg-text__portfolio">PORTFOLIO</div>
+        <div class="background-line-group background-line-group__portfolio">
+          <img src="./src/img/background/line-dec.svg" alt="" />
+        </div>
       </div>
 
       <div class="portfolio__inner">
         <h2 class="section-title">Портфолио</h2>
         <h3 class="portfolio__subtitle">Веб сайты</h3>
         <p class="portfolio__description">
-          Мне по кайфу делать сайтетские, причем все от дизайна до сео
-          оптимизации. Пока в данном разделе две работы выполненые на htm5 css3?
-          jequery и javascript. Люблю чет-то делать и видеть в живую результат)
+          Сайты для меня это отдельный вид искусства. я стараюсь сочитать стетичный дизайн и грамотную техническую составляющую чтобы сайт работал быстро и смотрелся хорошо
         </p>
       </div>
     </section>
@@ -275,9 +277,8 @@
               FITTIMES zelenograd
             </div>
             <div class="websites__description">
-              Landing page посвященный персональным тренировкам. Задача:
-              разработка дизайна, верстка, насполнение контентом. Моя первая
-              работа.
+              
+              Landing page посвященный персональным тренировкам. В проекте разработан дизайн, сверстаны все элементы написан скрипт для слайдера. Сайт адаптивен для всех устройств.
             </div>
             <!--  -->
             <div class="websites__links">
@@ -299,9 +300,8 @@
               Видеосъемка недвижимости
             </div>
             <div class="websites__description">
-              Многостраничный сайт посвященный фото, видео и аэросъемкой
-              недвижимости. Мной реализованно опять таки все от дизайна до
-              конечного вида
+              Моя перва работа в области разработки сайтов, изи себя предстовляе
+              Многостраничный сайт по видеосъемке недвижимости. 
             </div>
             <a href="http://avalonkoteek.github.io">
               <button class="button button__portfolio">
@@ -350,9 +350,7 @@
       <div class="other-works__wrapper">
         <!-- BG TEXT
 					=============================== -->
-        <div class="bg-text__after-portfolio">
-          <p>React</p>
-        </div>
+       <div class="background-text background-text__slider-wrapper">React JS</div>
 
         <!-- SLIDER
 					=============================== -->
@@ -425,7 +423,7 @@
     ==========================================================================-->
     <section class="contact" id="contact">
       <div class="background-wrapper background-wrapper__contact">
-        <!-- background -->
+     
 
         <div class="grid">
           <div class="grid__line"></div>
@@ -487,6 +485,6 @@
     <script src="src/js/scripts.js"></script>
     <script src="src/js/grid-script.js"></script>
     <script src="src/js/menu-app.js"></script>
-    <script src="src/js/paralax.js"></script>
+    <!-- <script src="src/js/paralax.js"></script> -->
   </body>
 </html>

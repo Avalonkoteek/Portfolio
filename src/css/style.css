@@ -1,11 +1,11 @@
 @import url("../fonts/playfair.css");
 @import url("./base_css/normalize.css");
 @import url("./base_css/base.css");
+@import url("./reset.css");
 @import url("./Background-style.css");
 @import url("./social-links.css");
 @import url("./menu.css");
 @import url("./button.css");
-@import url("./reset.css");
 @import url("./section-title.css");
 @import url("./background-text.css");
 
