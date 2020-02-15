@@ -1,27 +1,13 @@
-
-
-
-let grid = $(".grid");
-let gridLine = grid.children(".grid__line");
-console.log(gridLine);
-
-getLightLine();
-
-
-
-
-
-
-function getLightLine(){
+let HeaderGrid = $("header").find(".grid");
+let gridLine = HeaderGrid.children(".grid__line");
 let $lightLine = $("<div class='lightLine'></div>");
 gridLine.append($lightLine);
-}
-function removea(){
-    let $lightLine  = $(".lightLine");
-    $lightLine.removeClass("lightLine--active")
-}
-function animateLine(){
-    console.log("chf,jnfkj");
-    let $lightLine  = $(".lightLine");
-    $lightLine.addClass("lightLine--active")
-}
+
+let gridTimer = setInterval(() => {
+  console.log($(".lightLine")[0]);
+  $(".lightLine").addClass("lightLine--active");
+  $(".lightLine:first").removeClass("lightLine--active");
+  setTimeout(() => {
+    $(".lightLine").removeClass("lightLine--active");
+  }, 2000);
+}, 8000);
