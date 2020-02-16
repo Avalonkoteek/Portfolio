@@ -15,6 +15,7 @@ nav {
   padding-left: var(--padding);
   padding-right: var(--padding);
   z-index: 100;
+  user-select: none;
 }
 .js-nav--top {
   position: fixed;
@@ -71,13 +72,19 @@ nav {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   font-size: 24px;
+  overflow: hidden;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1080px) {
+  .bg-title {
+    display: none;
+  }
   .nav-links > ul {
+    padding-top: 100px;
+    padding-bottom: 100px;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    font-size: 18px;
+    font-size: 16px;
   }
   .social-links__menu {
     display: none;
@@ -101,6 +108,7 @@ nav {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+  user-select: none;
 }
 
 .nav-link:hover {
@@ -125,10 +133,11 @@ nav {
   flex-direction: column;
   justify-content: space-between;
   width: 26px;
-  height: 14px;
+  height: 16px;
   position: relative;
   cursor: pointer;
   transition: all 0.4s ease;
+  user-select: none;
 }
 
 /* style each line in the burger */
@@ -196,7 +205,6 @@ nav {
   opacity: 1;
   transition: all 0.4 ease;
   position: absolute;
-  
 }
 
 .menu-btn__line--toggle:nth-of-type(2) {
@@ -204,30 +212,45 @@ nav {
 }
 
 .menu-btn__line--toggle:first-of-type {
-  
-  
-  animation: burger--toggele__first 0.4s ease;
+  animation: burger--toggle__first 0.4s ease;
   transform: rotateZ(45deg);
 }
 
 .menu-btn__line--toggle:last-of-type {
-  animation: burger--toggele__second 0.4s ease;
+  animation: burger--toggle__second 0.4s ease;
   transform: rotateZ(-45deg);
-
 }
-@keyframes burger--toggele__first{
-  0%{
+
+@keyframes burger--toggle__first {
+  0% {
     transform: rotateZ(0deg);
   }
-  100%{
+  100% {
     transform: rotateZ(45deg);
   }
 }
-@keyframes burger--toggele__second{
-  0%{
+@keyframes burger--toggle__second {
+  0% {
     transform: rotateZ(0deg);
   }
-  100%{
+  100% {
     transform: rotateZ(-45deg);
+  }
+}
+
+@keyframes burger--toggle__end {
+  0% {
+    transform: rotateZ(45deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+@keyframes burger--toggle__end {
+  0% {
+    transform: rotateZ(-45deg);
+  }
+  100% {
+    transform: rotateZ(0);
   }
 }

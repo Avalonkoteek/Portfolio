@@ -6,6 +6,7 @@
   padding: 0 var(--padding);
   padding-top: 100px;
   background-color: #111;
+  overflow: hidden;
 }
 /* BACKGROUND
 ************************************ */
@@ -13,9 +14,9 @@
   width: 100%;
   z-index: 0;
 }
-.background-line-group__portfolio{
+.background-line-group__portfolio {
   right: -50px;
-  top:300px;
+  top: 300px;
   opacity: 0.5;
   transform: rotateZ(90deg);
 }

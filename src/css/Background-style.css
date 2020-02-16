@@ -71,6 +71,12 @@
   .background-line-group {
     display: none;
   }
+  .bg-text {
+    display: none;
+  }
+  .bg-title {
+    display: none;
+  }
 }
 /* Line group */
 .background-line-group {

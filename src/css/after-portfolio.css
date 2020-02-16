@@ -8,6 +8,8 @@
   position: relative;
   padding-bottom: 100px;
   overflow: hidden;
+  width: 100%;
+  overflow: hidden;
 }
 
 ul {
@@ -22,8 +24,6 @@ ul {
 /* BG TEXT
   =========================== */
 .bg-text__after-portfolio {
- 
-
   opacity: 0.3;
   font-family: "assc";
   font-size: 300px;
@@ -32,7 +32,7 @@ ul {
   -webkit-text-stroke: 3px #444;
   text-transform: uppercase;
 }
-.background-text__slider-wrapper{
+.background-text__slider-wrapper {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -82,8 +82,6 @@ ul {
   -ms-user-select: none;
   user-select: none;
   pointer-events: none;
-
-  
 }
 .work-item__content-col {
   width: 100%;
@@ -94,8 +92,6 @@ ul {
   height: 100%;
   z-index: 2;
   width: 100%;
-
-
 }
 .work-item__counter {
   position: absolute;
@@ -117,7 +113,6 @@ ul {
   color: #fff;
   pointer-events: auto;
   cursor: pointer;
- 
 }
 .work-item__description {
   color: #999999;
@@ -125,7 +120,7 @@ ul {
 
   font-size: 23px;
 }
-@media(max-width:1000px){
+@media (max-width: 1000px) {
   .work-item__counter {
     font-size: 30px;
   }
@@ -138,7 +133,7 @@ ul {
     font-size: 16px;
   }
 }
-@media(max-width:400px){
+@media (max-width: 400px) {
   .work-item__counter {
     font-size: 25px;
   }

@@ -7,19 +7,19 @@
   --text-color: #adadad;
   --padding-section-top: 100px;
   --padding-section-bottom: 100px;
-  --font-size__subtitile:40px;
+  --font-size__subtitile: 40px;
 }
-@media(max-width:800px){
+@media (max-width: 800px) {
   :root {
     --padding: 40px;
 
-    --font-size__subtitile:30px;
+    --font-size__subtitile: 30px;
   }
 }
-@media(max-width:360px){
+@media (max-width: 420px) {
   :root {
-    --padding: 20px;
+    --padding: 15px;
 
-    --font-size__subtitile:24px;
+    --font-size__subtitile: 24px;
   }
 }
