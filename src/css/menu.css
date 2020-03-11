@@ -4,10 +4,10 @@ nav {
 }
 
 .navbar {
-  position: absolute;
+  position: fixed;
   top: 0;
   width: 100%;
-  min-height: 60px;
+  min-height: 80px;
   height: 10vh;
   display: flex;
   justify-content: center;
@@ -19,7 +19,6 @@ nav {
 }
 .js-nav--top {
   position: fixed;
-  top: 0;
   z-index: 100000;
 }
 .navbar-controls {
