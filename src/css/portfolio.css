@@ -120,6 +120,13 @@
   font-weight: 500;
   margin-bottom: 65px;
 }
+.websites__links {
+  display: flex;
+  align-items: center;
+}
+.websites__links > *:first-of-type {
+  margin-right: 20px;
+}
 @media (max-width: 1000px) {
   .websites__wrapper {
     padding: 0 var(--padding);

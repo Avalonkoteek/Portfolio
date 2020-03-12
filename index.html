@@ -104,7 +104,9 @@
         <!-- content header -->
         <div class="header-main-info-box">
           <h1 class="header__title js-header__title">Frontend  разработчик</h1>
-          <button class="button button__header">Смотреть резюме</button>
+          <a href="./src/cv/cv_bykovdmitry.pdf" target="_blank"
+            ><button class="button button__header">Смотреть резюме</button></a
+          >
         </div>
 
         <div class="header-bottom-elements">
@@ -179,12 +181,11 @@
         <div class="about-text">
           <p class="about-text__title">Кто этот парень?</p>
           <p class="about-text__description">
-            Я начинающий frontend разработчик из Санкт-петербурга. С сентября
-            2019го года активно разбираюсь в этой сфере. На данный момент изучаю
-            React js и Node js(express) для разработки больших приложений и
-            сервисов. Умею разрабатывать сайты, чуть ниже представлены некоторые
-            мои работы, есть и коммерческие проекты. Моя цель - найти команду
-            увлеченных и активных разработчиков, стать частью команды,
+            Я начинающий frontend разработчик из Санкт-петербурга. Активно
+            развиваюсь в любимой сфере. На данный момент изучаю React js и Node
+            js(express) для разработки больших приложений и сервисов. Умею
+            разрабатывать сайты, чуть ниже представлены некоторые моих работы,
+            есть и коммерческие проекты. Моя цель - стать частью команды,
             создавать, развивать и продвигать большие, полноценные проекты. Не
             боюсь трудностей, трудолюбив и общителен.
           </p>
@@ -263,11 +264,11 @@
         <h2 class="section-title">Портфолио</h2>
         <h3 class="portfolio__subtitle">Веб сайты</h3>
         <p class="portfolio__description">
-          Разработка сайта для меня - это отдельный вид искусства, позволяющий
+          Разработка сайта для меня - отдельный вид искусства, позволяющий
           открыть в себе настоящего художника с собственным стилем. Это касается
-          не только дизайна, но и кода. Я стремлюсь к созданию проектов с
-          максимальной функциональностью и эстетичным дизайном. Проекты ниже от
-          новых к старым
+          не только дизайна, но и кода. Стремлюсь к созданию проектов с
+          максимальной функциональностью и эстетичным дизайном. Проекты ниже
+          представлены от новых к старым
         </p>
       </div>
     </section>
@@ -300,17 +301,25 @@
             </div>
             <div class="websites__description">
               Landing page посвященный персональным тренировкам. В проекте
-              разработан дизайн, сверстаны все элементы написан скрипт для
-              слайдера. Сайт адаптивен.
+              разработан дизайн, сверстаны все элементы написан скрипты. Сайт
+              адаптивен.
             </div>
             <!--  -->
             <div class="websites__links">
-              <a href="http://fittimes.ru">
+              <a href="http://fittimes.ru" target="_blank">
                 <button class="button button__portfolio">
                   Смотреть работу
-                </button></a
+                </button>
+              </a>
+              <a
+                href="https://github.com/Avalonkoteek/FitTimes-website"
+                target="_blank"
               >
-              <a class="social-icon github-logo"></a>
+                <div class="social-links__item">
+                  <img src="src/img/social/github-logo.svg" alt="" />
+                  <img src="src/img/social/github-logo (1).svg" alt="" />
+                </div>
+              </a>
             </div>
           </div>
         </li>
@@ -326,14 +335,26 @@
             </div>
             <div class="websites__description">
               Многостраничный сайт по видеосъемке недвижимости. Разработан
-              дизайна, верстка элементов, написаны скрипты. Сайт адаптивен.
+              дизайн, верстка элементов, написаны скрипты. Сайт адаптивен.
               Первая работа
             </div>
-            <a href="http://avalonkoteek.github.io" target="_blank">
-              <button class="button button__portfolio">
-                Смотреть работу
-              </button></a
-            >
+
+            <div class="websites__links">
+              <a href="https://avalonkoteek.github.io/" target="_blank">
+                <button class="button button__portfolio">
+                  Смотреть работу
+                </button>
+              </a>
+              <a
+                href="https://github.com/Avalonkoteek/Avalonkoteek.github.io"
+                target="_blank"
+              >
+                <div class="social-links__item">
+                  <img src="src/img/social/github-logo.svg" alt="" />
+                  <img src="src/img/social/github-logo (1).svg" alt="" />
+                </div>
+              </a>
+            </div>
           </div>
         </li>
       </ul>
@@ -365,7 +386,7 @@
         <p class="other-works__deskription">
           Я интересуюсь разработкой разных вещей. В этом разделе собраны мои
           мини и не мини проекты связанные с frontend разработкой. Тут есть
-          приложения на react js, аканойд на js внутри canvas.
+          приложения на react js и аканойд на js внутри canvas.
         </p>
         <!--  -->
       </div>
@@ -433,7 +454,12 @@
                   <div class="work-item__counter">003</div>
                   <div class="work-item__text">
                     <p class="work-item__description">Игра на чистом js</p>
-                    <h3 class="work-item__title">Arcanoid</h3>
+                    <a
+                      href="https://codesandbox.io/s/github/Avalonkoteek/Minimalistic-Arkanoid"
+                      target="_blank"
+                      class="work-item__title"
+                      >Arcanoid</a
+                    >
                   </div>
                 </div>
                 <div class="work-item__img-col">
@@ -478,26 +504,29 @@
         </div>
         <p class="contact__social">Социальные сети</p>
         <div class="social-links social-links__contact">
-          <div class="social-links__item">
-            <img src="src/img/social/github-logo.svg" alt="" /><img
-              src="src/img/social/github-logo (1).svg"
-              alt=""
-            />
-          </div>
-
-          <div class="social-links__item">
-            <img src="src/img/social/vk-social-network-logo.svg" alt="" /><img
-              src="src/img/social/vk-social-network-logo (1).svg"
-              alt=""
-            />
-          </div>
-
-          <div class="social-links__item">
-            <img src="src/img/social/telegram.svg" alt="" /><img
-              src="src/img/social/telegram (1).svg"
-              alt=""
-            />
-          </div>
+          <a href="https://github.com/Avalonkoteek" target="_blank">
+            <div class="social-links__item">
+              <img src="src/img/social/github-logo.svg" alt="" /><img
+                src="src/img/social/github-logo (1).svg"
+                alt=""
+              /></div
+          ></a>
+          <a href="https://github.com/Avalonkoteek" target="_blank">
+            <div class="social-links__item">
+              <img src="src/img/social/vk-social-network-logo.svg" alt="" /><img
+                src="src/img/social/vk-social-network-logo (1).svg"
+                alt=""
+              />
+            </div>
+          </a>
+          <a href="https://t.me/Bykov_Dmitry" target="_blank">
+            <div class="social-links__item">
+              <img src="src/img/social/telegram.svg" alt="" /><img
+                src="src/img/social/telegram (1).svg"
+                alt=""
+              />
+            </div>
+          </a>
         </div>
       </div>
     </section>
