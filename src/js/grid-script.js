@@ -4,7 +4,6 @@ let $lightLine = $("<div class='lightLine'></div>");
 gridLine.append($lightLine);
 
 let gridTimer = setInterval(() => {
-  console.log($(".lightLine")[0]);
   $(".lightLine").addClass("lightLine--active");
   $(".lightLine:first").removeClass("lightLine--active");
   setTimeout(() => {

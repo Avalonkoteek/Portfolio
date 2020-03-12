@@ -10,7 +10,6 @@ html {
   font-size: 18px;
 }
 
-
 a {
   text-decoration: none;
   background-color: none;
@@ -46,13 +45,14 @@ main {
   align-items: center;
   background-color: #000;
 }
-
+a {
+  user-select: none;
+}
 p {
   font-size: 1rem;
 }
 
 @media (max-width: 780px) {
-
   html {
     font-size: 16px;
   }
@@ -68,8 +68,8 @@ p {
   main > section {
     padding: 60px 5px;
   }
-  :root{
-    --padding:15px
+  :root {
+    --padding: 15px;
   }
 }
 
