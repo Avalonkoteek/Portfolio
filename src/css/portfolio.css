@@ -5,7 +5,7 @@
   flex-direction: column;
   padding: 0 var(--padding);
   padding-top: 100px;
-  background-color: #111;
+  background-color: var(--bg-color);
   overflow: hidden;
 }
 /* BACKGROUND
@@ -62,6 +62,7 @@
   width: 100%;
   position: relative;
   z-index: 1;
+  background-color: var(--bg-color);
 }
 .websites__wrapper {
   width: 100%;
@@ -80,8 +81,9 @@
 .websites__image-website {
   width: 50%;
   cursor: pointer;
+  max-height: 465px;
 }
-.websites__item:first-of-type {
+.websites__item:nth-of-type(2n) {
   flex-direction: row-reverse;
 }
 

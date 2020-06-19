@@ -20,10 +20,6 @@
   }
 }
 
-body {
-  background-color: #111;
-}
-
 /* HOME PAGE */
 .background-wrapper {
   left: 0;
@@ -42,12 +38,12 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  background: #111;
+  background-color: var(--bg-color);
   z-index: 10;
 }
 
 /*  BG  */
-.background-line-group__header{
+.background-line-group__header {
   bottom: -110px;
   right: -50px;
   z-index: -1;
